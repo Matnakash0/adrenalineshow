@@ -292,7 +292,7 @@ footer{
 
 @media (max-width: 768px) {
   .square-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .catalog-grid {
     grid-template-columns: 1fr;
@@ -301,6 +301,99 @@ footer{
     width: 250;
     height:60
   }
+.photo-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 768px;
+    margin:auto;
+    padding: 64px;
+    body {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 40px;
+    color: #444444;
+    height:auto;
+    width:768px;
+    display: grid;
+    place-items: center;
+    background-color: #525252;
+  }
+.head2{
+    font-size: 40px;
+    line-height: 46px;
+}
+.head3{
+    font-size: 22px;
+    height: 30px;
+}
+.bodyL{
+    font-size: 10px;
+    height: 17px;
+    padding-bottom: 22px;
+}
+.bodyS{
+    font-size: 7px;
+    height: 7px;
+    text-align:center;
+    margin:2px;
+}
+
+
+main{
+    background: linear-gradient(to right, black, red);
+    width: 768px;
+    display: grid;
+    place-items: center
+}
+footer{
+    background: linear-gradient(to bottom, black 0%, rgb(29,0,0) 30%, rgb(96, 1, 1) 50%, red 70%, white 100%);
+    width: 768px;
+    display: grid;
+    place-items: center
+}
+    .styl1{
+    width:auto;
+    height:24px;
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    padding:15px;
+    margin:20px;
+    padding-right:40px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+    .header2{
+    background-image: url('icons/photo_ШПАГАТ.jpg');
+    background-size: no-repeat;
+    background-position:initial;
+    background-size:corner;
+    height:590px;
+    width: 768px;
+    display: grid;
+    place-items: center
+}
+.header_fon{
+    background-color:rgb(126, 117, 117, 0.4);
+    height:590px;
+    width: 768px;
+    content: '';
+    position: absolute;
+    top: 0;
+    display: grid;
+    place-items:initial
+}
+.but2{
+    margin:auto;
+}
+
 
 }
+
 
