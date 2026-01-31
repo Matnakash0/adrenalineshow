@@ -297,5 +297,10 @@ footer{
   .catalog-grid {
     grid-template-columns: 1fr;
   }
+  .logo_hat{
+    width: 250;
+    height:60
+  }
 
 }
+
