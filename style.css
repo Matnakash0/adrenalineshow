@@ -291,122 +291,168 @@ footer{
 
 
 @media (max-width: 375px) {
+  /* Общие стили для body */
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 40px;
+    color: #444444;
+    height: auto;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: #525252;
+  }
   .square-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
   }
+
   .catalog-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+    box-sizing: border-box;
   }
-  .logo_hat{
-    width: 250;
-    height:60
-  }
-.photo-grid{
+
+  .photo-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    max-width: 375px;
-    margin:auto;
-    padding: 32px;
-    body {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    line-height: 40px;
-    color: #444444;
-    height:auto;
-    width:375px;
-    display: grid;
-    place-items: center;
-    background-color: #525252;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px; /* Паддинг по бокам уменьшен для адаптивности */
+    box-sizing: border-box;
   }
-    body {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    line-height: 40px;
-    color: #444444;
-    height:auto;
-    width:375px;
-    display: grid;
-    place-items: center;
-    background-color: #525252;
-  }
-.head2{
+
+  .head2 {
     font-size: 40px;
     line-height: 46px;
-}
-.head3{
+    margin: 0;
+    color: white;
+    text-align: center;
+  }
+
+  .head3 {
     font-size: 22px;
     height: 30px;
-}
-.bodyL{
+    margin: 16px 0;
+    color: white;
+  }
+
+  .bodyL {
     font-size: 10px;
     height: 17px;
     padding-bottom: 22px;
-}
-.bodyS{
+    color: #ddd;
+    text-align: center;
+  }
+
+  .bodyS {
     font-size: 7px;
     height: 7px;
-    text-align:center;
-    margin:2px;
-}
+    text-align: center;
+    margin: 2px;
+    color: #bbb;
+  }
 
 
-main{
+  main {
     background: linear-gradient(to right, black, red);
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     display: grid;
-    place-items: center
-}
-footer{
-    background: linear-gradient(to bottom, black 0%, rgb(29,0,0) 30%, rgb(96, 1, 1) 50%, red 70%, white 100%);
-    width: 375px;
+    place-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Футер с градиентом */
+  footer {
+    background: linear-gradient(
+      to bottom,
+      black 0%,
+      rgb(29, 0, 0) 30%,
+      rgb(96, 1, 1) 50%,
+      red 70%,
+      white 100%
+    );
+    width: 100%;
+    max-width: 375px;
     display: grid;
-    place-items: center
-}
-    .styl1{
-    width:auto;
-    height:24px;
+    place-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Кнопка styl1 */
+  .styl1 {
+    width: auto;
+    height: 24px;
     background-color: red;
-    color:white;
+    color: white;
     border-radius: 15px;
-    padding:15px;
-    margin:20px;
-    padding-right:40px;
-    padding-left: 40px;
+    padding: 0 40px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
     letter-spacing: 1px;
-}
-    .header2{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Шапка с фоном изображения */
+  .header2 {
     background-image: url('icons/photo_ШПАГАТ.jpg');
-    background-size: no-repeat;
-    background-position:initial;
-    background-size:corner;
-    height:590px;
-    width: 375px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 590px;
+    width: 100%;
+    max-width: 375px;
     display: grid;
-    place-items: center
-}
-.header_fon{
-    background-color:rgb(126, 117, 117, 0.4);
-    height:590px;
-    width: 375px;
-    content: '';
+    place-items: center;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  /* Полупрозрачный фон поверх header2 */
+  .header_fon {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 117, 117, 0.4);
     display: grid;
-    place-items:initial
-}
-.but2{
-    margin:auto;
+    place-items: center;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  /* Кнопка but2 (если нужна по центру) */
+  .but2 {
+    margin: 20px auto;
+    display: block;
+  }
+
+  /* Логотип */
+  .logo_hat {
+    width: 250px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+  }
 }
 
 
-}
 
 
 
